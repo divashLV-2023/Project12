@@ -3,3 +3,4 @@ plotly
 streamlit
 pandas-datareader
 scikit-learn
+matplotlib==3.5.1
