@@ -122,7 +122,7 @@ if segmentation_type == 'Heart Attack':
 
         # Print average values for each cluster
         st.write("##### Average values of risk factors for each cluster:")
-        st.write(cluster_avg)
+        st.write(round(cluster_avg,2))
 
         # Compare the average values between clusters
         if cluster_avg.loc[0, 'Cholesterol'] > cluster_avg.loc[1, 'Cholesterol']:
@@ -138,17 +138,17 @@ if segmentation_type == 'Heart Attack':
     # Calculate and display silhouette score if selected
     if show_silhouette_score:
         silhouette_avg = silhouette_score(X_scaled, kmeans.labels_)
-        st.write("##### Silhouette Score:", silhouette_avg)
+        st.write("##### Silhouette Score:", round(silhouette_avg,2))
 
     # Calculate and display Davies-Bouldin index if selected
     if show_davies_bouldin:
         davies_bouldin = davies_bouldin_score(X_scaled, kmeans.labels_)
-        st.write("##### Davies-Bouldin Index:", davies_bouldin)
+        st.write("##### Davies-Bouldin Index:", round(davies_bouldin,2))
 
     # Calinski-Harabasz Index
     if show_Calinski_Harabasz:
         calinski_harabasz = calinski_harabasz_score(X_scaled, kmeans.labels_)
-        st.write("##### Calinski-Harabasz Index:", calinski_harabasz)
+        st.write("##### Calinski-Harabasz Index:", round(calinski_harabasz,2))
 
 
 
@@ -223,7 +223,7 @@ elif segmentation_type == 'Diabetes':
 
         # Print average values for each cluster
         st.write("##### Average values of risk factors for each cluster:")
-        st.write(cluster_avg)
+        st.write(round(cluster_avg,2))
 
         # Compare average values between clusters
         if cluster_avg.loc[0, 'Cholesterol'] > cluster_avg.loc[1, 'Cholesterol']:
@@ -239,17 +239,17 @@ elif segmentation_type == 'Diabetes':
     # Calculate and display silhouette score if selected
     if show_silhouette_score:
         silhouette_avg = silhouette_score(X_scaled, kmeans.labels_)
-        st.write("##### Silhouette Score:", silhouette_avg)
+        st.write("##### Silhouette Score:", round(silhouette_avg,2))
 
     # Calculate and display Davies-Bouldin index if selected
     if show_davies_bouldin:
         davies_bouldin = davies_bouldin_score(X_scaled, kmeans.labels_)
-        st.write("##### Davies-Bouldin Index:", davies_bouldin)
+        st.write("##### Davies-Bouldin Index:", round(davies_bouldin,2))
 
     # Calinski-Harabasz Index
     if show_Calinski_Harabasz:
         calinski_harabasz = calinski_harabasz_score(X_scaled, kmeans.labels_)
-        st.write("##### Calinski-Harabasz Index:", calinski_harabasz)
+        st.write("##### Calinski-Harabasz Index:", round(calinski_harabasz,2)
 
 
 
@@ -322,7 +322,7 @@ elif segmentation_type == 'Obesity':
 
         # Print average values for each cluster
         st.write("##### Average values of risk factors for each cluster:")
-        st.write(cluster_avg)
+        st.write(round(cluster_avg,2))
 
         # Compare average values between clusters
         if cluster_avg.loc[0, 'Cholesterol'] > cluster_avg.loc[1, 'Cholesterol']:
@@ -338,17 +338,17 @@ elif segmentation_type == 'Obesity':
     # Calculate and display silhouette score if selected
     if show_silhouette_score:
         silhouette_avg = silhouette_score(X_scaled, kmeans.labels_)
-        st.write("##### Silhouette Score:", silhouette_avg)
+        st.write("##### Silhouette Score:", round(silhouette_avg,2))
 
     # Calculate and display Davies-Bouldin index if selected
     if show_davies_bouldin:
         davies_bouldin = davies_bouldin_score(X_scaled, kmeans.labels_)
-        st.write("##### Davies-Bouldin Index:", davies_bouldin)
+        st.write("##### Davies-Bouldin Index:", round(davies_bouldin,2))
 
     # Calinski-Harabasz Index
     if show_Calinski_Harabasz:
         calinski_harabasz = calinski_harabasz_score(X_scaled, kmeans.labels_)
-        st.write("##### Calinski-Harabasz Index:", calinski_harabasz)
+        st.write("##### Calinski-Harabasz Index:", round(calinski_harabasz,2))
 
 
 
@@ -424,7 +424,7 @@ elif segmentation_type == 'Hyper Tension':
 
         # Print the average values for each cluster
         st.write("##### Average values of risk factors for each cluster:")
-        st.write(cluster_avg)
+        st.write(round(cluster_avg,2))
 
         # Compare the average values between clusters
         if cluster_avg.loc[0, 'Cholesterol'] > cluster_avg.loc[1, 'Cholesterol']:
@@ -440,17 +440,17 @@ elif segmentation_type == 'Hyper Tension':
     # Calculate and display silhouette score if selected
     if show_silhouette_score:
         silhouette_avg = silhouette_score(X_scaled, kmeans.labels_)
-        st.write("##### Silhouette Score:", silhouette_avg)
+        st.write("##### Silhouette Score:", round(silhouette_avg,2))
 
     # Calculate and display Davies-Bouldin index if selected
     if show_davies_bouldin:
         davies_bouldin = davies_bouldin_score(X_scaled, kmeans.labels_)
-        st.write("##### Davies-Bouldin Index:", davies_bouldin)
+        st.write("##### Davies-Bouldin Index:", round(davies_bouldin,2))
 
     # Calinski-Harabasz Index
     if show_Calinski_Harabasz:
         calinski_harabasz = calinski_harabasz_score(X_scaled, kmeans.labels_)
-        st.write("##### Calinski-Harabasz Index:", calinski_harabasz)
+        st.write("##### Calinski-Harabasz Index:", round(calinski_harabasz,2))
 
 
 st.sidebar.markdown("---")
