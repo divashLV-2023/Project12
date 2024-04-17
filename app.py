@@ -249,7 +249,7 @@ elif segmentation_type == 'Diabetes':
     # Calinski-Harabasz Index
     if show_Calinski_Harabasz:
         calinski_harabasz = calinski_harabasz_score(X_scaled, kmeans.labels_)
-        st.write("##### Calinski-Harabasz Index:", round(calinski_harabasz,2)
+        st.write("##### Calinski-Harabasz Index:", round(calinski_harabasz,2))
 
 
 
