@@ -44,11 +44,11 @@ st.write(df.describe())  # Display summary statistics
 st.sidebar.title("Options")
 st.sidebar.write("Select options to view analysis:")
 segmentation_type = st.sidebar.selectbox('Select disease type',
-                                         ['Heart Attack','Diabetes', 'Obesity',  'Hyper Tension'])
+                                         ['Cardiovascular Diseases','Diabetes', 'Obesity',  'Hyper Tension'])
 
 
 
-if segmentation_type == 'Heart Attack':
+if segmentation_type == 'Cardiovascular Diseases':
     show_clusters = st.sidebar.checkbox("Show Cluster Visualization")
     show_avg_values = st.sidebar.checkbox("Show Average Risk Factor Values")
     show_silhouette_score = st.sidebar.checkbox("Show Silhouette Score")
@@ -56,7 +56,7 @@ if segmentation_type == 'Heart Attack':
     show_Calinski_Harabasz= st.sidebar.checkbox("Show Calinski_Harabasz Index")
 
     # Header
-    st.header("Heart attack:")
+    st.header("Cardiovascular Diseases:")
     st.write("#### Visualizations and output:")
     # Load data
     df = pd.read_csv('https://raw.githubusercontent.com/divashLV-2023/Project12/main/heart_attack_prediction_dataset%20(2).csv')
